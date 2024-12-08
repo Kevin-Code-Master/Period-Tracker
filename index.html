@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ß, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <title>Period Tracker</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div id="header_logo"></div>
+        <div id="account_prompt"></div>
+        <div id="sign_in_section">
+            <button type="button" id="sign_up">SIGN UP</button>
+            <button type="button" id="sign_in">SIGN IN</button>
+        </div>
+    </header>
+    <main>
+        <!-- The main section has two divisions: The sign up section (container) and the sign-in container -->
+        <div id="info_section"></div>
+        <div id="sign_in_container">
+            <!-- The sign_up_div will display when the sign-up button is clicked -->
+            <div id="sign_up_div">
+                <!-- container for the sign_up prompt -->
+                <div id="prompt">
+                    <p>You don't have an account? Sign up here</p>
+                </div>
+                <!-- Div container for the sign-up form -->
+                <div id="sign_up_form_container">
+                    <form action="#">
+                        <table>
+                            <tr>
+                                <td class="sign_up_labels"><label for="first_name">First Name:</label></td>
+                                <td><input type="text" name="first_name" id="first_name"></td>
+                            </tr>
+                            <tr>
+                                <td class="sign_up_labels"><label for="last_name">Last Name:</label></td>
+                                <td><input type="text" name="last_name" id="last_name"></td>
+                            </tr>
+                            <tr>
+                                <td class="sign_up_labels"><label for="d.o.b">Date of Birth:</label></td>
+                                <td><input type="date" id="d.o.b" name="d.o.b"></td>
+                            </tr>
+                            <tr>
+                                <td class="sign_up_labels"><label for="email">Email Address:</label></td>
+                                <td><input type="email" id="email" name="email"></td>
+                            </tr>
+                            <tr>
+                                <td class="sign_up_labels"><label for="password">Password:</label></td>
+                                <td><input type="password" id="password" name="password"></td>
+                            </tr>
+                            <tr>
+                                <td class="sign_up_labels"><label for="confirm_password">Confirm Password:</label></td>
+                                <td><input type="password" id="confirm_password" name="confirm_password"></td>
+                            </tr>
+                        </table>
+                        <button type="submit" id="submit">SIGN UP</button>
+                    </form>
+                </div>
+            </div>
+            <!-- The sign_in_div will display when the sign in button is clicked -->
+            <div id="sign_in_div"></div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
