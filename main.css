@@ -79,10 +79,19 @@ main {
 #sign_up_div {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     height: inherit;
     background-color: red;
     align-items: center;
+}
+/* You don't have an account prompt */
+#prompt {
+    width: 80%;   
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
 }
 /* div for the sign-up form */
 #sign_up_form_container {
@@ -92,11 +101,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 /* Sign up form */
 #sign_up_div form {
-    width: 90%;
+    width: 100%;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -134,4 +142,10 @@ main {
     border-radius: 1vh;
     font-weight: 600;
     color: purple;
+}
+/* Hover over submit button */
+#submit:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(237, 129, 147);
 }

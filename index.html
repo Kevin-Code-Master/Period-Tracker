@@ -18,8 +18,10 @@
         </div>
     </header>
     <main>
-        <!-- The main section has two divisions: The sign up section (container) and the sign-in container -->
-        <div id="info_section"></div>
+        <!-- The main section has two divisions: The info-section (container) and the sign-in container -->
+        <!-- The info-section contains a picture on the left -->
+        <div id="info_section"></div> 
+        <!-- this section contains the sign-up and the sign-in forms -->
         <div id="sign_in_container">
             <!-- The sign_up_div will display when the sign-up button is clicked -->
             <div id="sign_up_div">
@@ -33,27 +35,27 @@
                         <table>
                             <tr>
                                 <td class="sign_up_labels"><label for="first_name">First Name:</label></td>
-                                <td><input type="text" name="first_name" id="first_name"></td>
+                                <td><input type="text" name="first_name" id="first_name" required></td>
                             </tr>
                             <tr>
                                 <td class="sign_up_labels"><label for="last_name">Last Name:</label></td>
-                                <td><input type="text" name="last_name" id="last_name"></td>
+                                <td><input type="text" name="last_name" id="last_name" required></td>
                             </tr>
                             <tr>
                                 <td class="sign_up_labels"><label for="d.o.b">Date of Birth:</label></td>
-                                <td><input type="date" id="d.o.b" name="d.o.b"></td>
+                                <td><input type="date" id="d.o.b" name="d.o.b" required></td>
                             </tr>
                             <tr>
                                 <td class="sign_up_labels"><label for="email">Email Address:</label></td>
-                                <td><input type="email" id="email" name="email"></td>
+                                <td><input type="email" id="email" name="email" required></td>
                             </tr>
                             <tr>
                                 <td class="sign_up_labels"><label for="password">Password:</label></td>
-                                <td><input type="password" id="password" name="password"></td>
+                                <td><input type="password" id="password" name="password" required></td>
                             </tr>
                             <tr>
                                 <td class="sign_up_labels"><label for="confirm_password">Confirm Password:</label></td>
-                                <td><input type="password" id="confirm_password" name="confirm_password"></td>
+                                <td><input type="password" id="confirm_password" name="confirm_password" required></td>
                             </tr>
                         </table>
                         <button type="submit" id="submit">SIGN UP</button>
